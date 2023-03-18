@@ -1,0 +1,30 @@
+.advantages-section {
+    background-color: var(--color-dark-purple);
+}
+
+.advantages-container {}
+
+.visually-hidden {}
+
+.advantages-menu {}
+
+.advantages-item {}
+
+.advantages-icon-container {}
+
+.advantages-icon {}
+
+.advantages-subtitle {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.22;
+    color: var(--color-white-default);
+}
+
+.advantages-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.21;
+    letter-spacing: -0.02em;
+    color: var(--color-white-default);
+}
