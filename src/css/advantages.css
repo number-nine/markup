@@ -7,7 +7,7 @@
     
 
 
-.advantages-item-container:not(:last-child) {
+.advantages-item:not(:last-child) {
     margin-bottom: 20px;
 }
 
@@ -57,7 +57,7 @@
          justify-content: space-between;
     }
 
-    .advantages-item-container {
+    .advantages-item {
         width: calc((100% - 60px) / 2);
     }
  }
@@ -72,13 +72,13 @@
        flex-wrap: nowrap;      
   }
 
-  .advantages-item-container.advantages-item-container {
+  .advantages-item.advantages-item {
       width: calc((100% - 70px) / 3);
       padding-right: 18px;
       margin-bottom: 0;
   }
 
-  .advantages-item-container.after {
+  .advantages-item.after {
     position: relative;
   }
 
