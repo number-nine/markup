@@ -1,100 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/markup/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
-    
-    <script type="module" crossorigin src="/markup/assets/index-fac82e35.js"></script>
-    <link rel="stylesheet" href="/markup/assets/index-10c40100.css">
-  </head>
-  <body>
-    <header class="header">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/markup/favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vanilla App Template</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,700&family=Roboto&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+  
+  <script type="module" crossorigin src="/markup/assets/index-4c3bb0ed.js"></script>
+  <link rel="stylesheet" href="/markup/assets/index-c7be6740.css">
+</head>
+
+<body>
+  <!-- "Who did this?" -->
+  <header class="header">
   <nav class="nav">
     <ul class="nav-list">
       <li class="nav-item">
-        <a href="./page-2.html" class="nav-link">Page 2</a>
+        <a href="./" class="nav-link"></a>
       </li>
 
       <li class="nav-item">
-        <a href="./page-3.html" class="nav-link">Page 3</a>
+        <a href="./" class="nav-link"></a>
       </li>
     </ul>
   </nav>
 </header>
 
 
-    <section>
-      <h1>Lorem ipsum dolor sit amet.</h1>
-      <!-- Path to images as from index.html file -->
-      <img src="/markup/assets/javascript-8dac5379.svg" alt="" />
-    </section>
+  <main>
+    <!-- "Who did this?" -->
+    <!-- <br>Hero<br>
+У секції немає видимого заголовку. Потрібно зробити прихований заголовок для краулерів.
+Текст “Treat yourself or a loved one to our finest ingredients for a moment of pure delight!”  є підзаголовком сторінки.
+Кнопка “Buy now” відкриває модальне вікно “Buy now”.
+Кнопка “How it’s made” є якірним посиланням до секції “How it’s made”.
+Кнопка “Scroll down” є якірним посиланням до Footerу. -->
 
-    <!-- Loads the specified .html file -->
-    <section class="vite-promo">
-  <div class="container">
-    <div class="wrapper">
-      <h2 class="title">
-        <span class="gradient">Vite</span>
-      </h2>
-      <p class="text">Next Generation Frontend Tooling</p>
-      <p class="tagline">
-        Get ready for a development environment that can finally catch up with
-        you.
-      </p>
+    <!-- "Who did this?" -->
+    <!-- <br>Advantages <br>
+У секції немає видимого заголовку. Потрібно зробити прихований заголовок для краулерів.
+Перелік переваг, який необхідно реалізувати як сітку елементів з використанням <ul>. -->
+<section class="advantages-section">
+  <div class="advantages-container container">
+    <h2 class="visually-hidden">Our advantages</h2>
+    <ul class="advantages-menu">
+      <li class="advantages-item after">
+        <div class="advantages-icon-container">
+          <svg class="advantages-icon">
+            <use href="../img/icons.svg#chocolate"></use>
+          </svg>
+        </div>
+        <h3 class="advantages-subtitle">Unsurpassed taste</h3>
+        <p class="advantages-text">
+          Crafted with the finest quality cocoa beans and a dedication to
+          perfection, each bite is a decadent experience that simply cannot be
+          matched. Savor the richness and complexity of our Unsurpassed Taste
+          and discover a new level of chocolate bliss.
+        </p>
+      </li>
 
-      <ul class="actions">
-        <li class="action">
-          <a
-            class="link"
-            href="https://vitejs.dev/guide/"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Get Started</a
-          >
-        </li>
-        <li class="action">
-          <a
-            class="link"
-            href="https://github.com/vitejs/vite"
-            target="_blank"
-            rel="noopener noreferrer"
-            >View on GitHub</a
-          >
-        </li>
-      </ul>
-    </div>
+      <li class="advantages-item after">
+        <div class="advantages-icon-container">
+          <svg class="advantages-icon">
+            <use href="../img/icons.svg#coin"></use>
+          </svg>
+        </div>
+        <h3 class="advantages-subtitle">Affordable price</h3>
+        <p class="advantages-text">
+          Indulge in high-quality chocolate without breaking the bank with
+          Simply Chocolate's selection of affordable treats. Enjoy
+          mouth-watering truffles and velvety chocolate bars without sacrificing
+          taste or quality. Browse our selection and indulge in affordable
+          luxury today.
+        </p>
+      </li>
 
-    <div class="thumb">
-      <!-- Path to images as from index.html file -->
-      <img
-        class="pic"
-        src="/markup/assets/vite-logo-51249ca9.png"
-        alt="Vite logo"
-        width="640"
-        height="640"
-      />
-    </div>
+      <li class="advantages-item">
+        <div class="advantages-icon-container">
+          <svg class="advantages-icon">
+            <use href="../img/icons.svg#spoon"></use>
+          </svg>
+        </div>
+        <h3 class="advantages-subtitle">Own production</h3>
+        <p class="advantages-text">
+          We take pride in our own production process, ensuring that every step
+          is carefully crafted to perfection. From selecting the finest
+          ingredients to handcrafting each piece, our attention to detail is
+          evident in every bite.
+        </p>
+      </li>
+    </ul>
   </div>
 </section>
 
+    <!-- "Who did this?" -->
+    <!-- <br>Unique components<br>
+Текст “IT ALL ADDS UP TO ONE EXCEPTIONAL TASTE SENSATION” є заголовком секції.
+У секції знаходиться перелік унікальних складових шоколаду. Його необхідно реалізувати як сітку елементів з використанням <ul>.
+При ховер-ефекті картка з унікальною складовою розгортається та візуалізує її опис.* -->
 
-    <!-- Loads the specified .html file -->
-    <footer class="header">
-  <nav class="nav">
-    <ul class="nav-list">
-      <li class="nav-item">
-        <a href="./page-2.html" class="nav-link">Page 2</a>
-      </li>
+    <!-- "Who did this?" -->
+    <!-- <br>How it’s made?<br>
+Текст “HOW IT’S MADE?” є заголовком секції.
+Зображення потрібно реалізувати як контентні зображення. 
+Відео-ролик необхідно реалізувати за допомогою iframe, вибравши на Youtube тематичний ролик.* 
+У секції знаходиться перелік необхідних кроків для приготування шоколадних цукерок, який необхідно реалізувати як список елементів за допомогою <ul>. -->
 
-      <li class="nav-item">
-        <a href="./page-3.html" class="nav-link">Page 3</a>
-      </li>
-    </ul>
-  </nav>
-</footer>
+    <!-- "Who did this?" -->
+    <!-- <br>Our products <br>
+Текст “OUR PRODUCTS” є заголовком секції.
+У секції знаходиться перелік продуктів компанії, який необхідно реалізувати як список елементів за допомогою <ul>. У секції представлений слайдер. Маркери знизу - це пагінація слайдера. Якщо ви підключаєте бібліотеку слайдера до проєкту, їх не потрібно верстати, вони автоматично генеруються бібліотекою. Потрібно буде лише зробити стилізацію пагінації.* -->
 
-    
-  </body>
+    <!-- "Who did this?" -->
+    <!-- <br>Top sellers<br>
+Текст “TOP SELLERS” є заголовком секції.
+У секції знаходиться перелік контентних зображень, який необхідно реалізувати як список елементів за допомогою <ul>.
+Кнопка “Buy now” відкриває модальне вікно “Buy now”. -->
+
+    <!-- "Who did this?" -->
+    <!-- <br>Reviews<br>
+Текст “CHOCOLATE IS LOVED” є заголовком секції.
+У секції представлений слайдер із відгуками покупців. Маркери знизу - це пагінація слайдера. Якщо ви підключаєте бібліотеку слайдера до проєкту, їх не потрібно верстати, вони автоматично генеруються бібліотекою. Потрібно буде лише зробити стилізацію пагінації.*
+Кнопка “Leave a review” відкриває модальне вікно “Leave a review about our chocolate”. -->
+
+    <!-- "Who did this?" -->
+    <!-- <br>Subscribe<br>
+Текст “EXPLORE OUR NEW CHOCOLATE FIRST” є заголовком секції.
+Кнопка “Subscribe” відкриває модальне вікно “Explore our new chocolate first”. -->
+
+  </main>
+
+  <!-- "Who did this?" -->
+  <!-- <br>Footer<br>
+В Footer-і знаходиться слоган компанії, контакти, перелік посилань на соц. мережі компанії, а також перелік якірних посилань по сайту.
+Контактні номер телефону та електронна пошта необхідно реалізувати за допомогою протоколів посилання.
+Перелік посилань на соц. мережі має бути реалізовано як список елементів за допомогою <ul>, що відкриватимуть стартову сторінку відповідної соц. мережі у новій вкладці. Іконки соц. мереж потрібно реалізувати у форматі svg. 
+Перелік якірних посилань має бути реалізовано як список елементів за допомогою <ul>.  -->
+
+
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js" type="module"></script>
+  
+</body>
+
 </html>
