@@ -1,2 +1,2 @@
-import "./js/our-products-swiper";
-import "./js/chocolate-is-loved-swiper";
+import "./our-products-swiper";
+import "./chocolate-is-loved-swiper";
