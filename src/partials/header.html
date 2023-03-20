@@ -1,13 +1,94 @@
 <header class="header">
-  <nav class="nav">
-    <ul class="nav-list">
-      <li class="nav-item">
-        <a href="./" class="nav-link"></a>
-      </li>
+  <div class="header-container container">
+    <div class="logo-container">
+      <a class="header-link logo" href="../index.html"
+        ><span class="logo-span">SIMPLY</span> CHOCOLATE
+      </a>
+      <svg class="logo-icon">
+        <use href="../img/icons.svg#chocolate-logo"></use>
+      </svg>
+    </div>
 
-      <li class="nav-item">
-        <a href="./" class="nav-link"></a>
+    <nav class="header-nav">
+      <ul class="header-nav-list">
+        <li class="header-nav-item">
+          <a href="" class="header-nav-link">Home</a>
+        </li>
+        <li class="header-nav-item">
+          <a href="" class="header-nav-link">How it’s made?</a>
+        </li>
+        <li class="header-nav-item">
+          <a href="" class="header-nav-link">Our products</a>
+        </li>
+        <li class="header-nav-item">
+          <a href="" class="header-nav-link">Top sellers</a>
+        </li>
+        <li class="header-nav-item">
+          <a href="" class="header-nav-link">Chocolate is loved</a>
+        </li>
+      </ul>
+    </nav>
+    <ul class="header-soc-list">
+      <li class="header-soc-item">
+        <a href="" class="header-soc-link">
+          <svg class="soc-link-icon">
+            <use href="../img/icons.svg#instagram"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="header-soc-item">
+        <a href="" class="header-soc-link">
+          <svg class="soc-link-icon">
+            <use href="../img/icons.svg#twitter"></use>
+          </svg>
+        </a>
       </li>
     </ul>
-  </nav>
+    <button class="header-modal-button" type="button" data-modal-open>
+      <svg class="burger-button">
+        <use href="../img/icons.svg#icon-burger"></use>
+      </svg>
+    </button>
+  </div>
+  <div class="header-modal" data-modal>
+    <button class="header-close-button" type="button" data-modal-close>
+      <svg class="header-modal-close">
+        <use href="../img/icons.svg#close"></use>
+      </svg>
+    </button>
+    <ul class="modal-nav-list">
+      <li class="modal-nav-item">
+        <a href="" class="modal-nav-link">Home</a>
+      </li>
+      <li class="modal-nav-item">
+        <a href="" class="modal-nav-link">How it’s made?</a>
+      </li>
+      <li class="modal-nav-item">
+        <a href="" class="modal-nav-link">Our products</a>
+      </li>
+      <li class="modal-nav-item">
+        <a href="" class="modal-nav-link">Top sellers</a>
+      </li>
+      <li class="modal-nav-item">
+        <a href="" class="modal-nav-link">Chocolate is loved</a>
+      </li>
+    </ul>
+    <ul class="header-modal-soc-list">
+      <li class="header-modal-soc-item">
+        <a href="https://www.instagram.com/" class="header-modal-soc-link">
+          <svg class="soc-link-icon">
+            <use href="../img/icons.svg#instagram"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="header-modal-soc-item">
+        <a href="https://twitter.com/" class="header-modal-soc-link">
+          <svg class="soc-link-icon">
+            <use href="../img/icons.svg#twitter"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+  </div>
 </header>
+<script src="../js/modal-header.js"></script>

@@ -91,6 +91,6 @@
         display: block;
         width: 1px;
         height: 124px;
-        border: 1px solid var(--color-white-translucent);
+        border: 1px solid var(--color-white-translucent);             
   }
 }
