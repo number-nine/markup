@@ -1,56 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/markup/favicon.svg" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Vanilla App Template</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,700&family=Roboto&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
-    integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/markup/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vanilla App Template</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,700&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
     />
-  
-  <script type="module" crossorigin src="/markup/assets/index-4c3bb0ed.js"></script>
-  <link rel="stylesheet" href="/markup/assets/index-c7be6740.css">
-</head>
+    
+    <script type="module" crossorigin src="/markup/assets/index-4c3bb0ed.js"></script>
+    <link rel="stylesheet" href="/markup/assets/index-931cfe85.css">
+  </head>
 
-<body>
-  <!-- "Who did this?" -->
-  <header class="header">
-  <nav class="nav">
-    <ul class="nav-list">
-      <li class="nav-item">
-        <a href="./" class="nav-link"></a>
+  <body>
+    <!-- "Who did this?" -->
+    <header class="header">
+  <div class="header-container container">
+    <div class="logo-container">
+      <a class="header-link logo" href="../index.html"
+        ><span class="logo-span">SIMPLY</span> CHOCOLATE
+      </a>
+      <svg class="logo-icon">
+        <use href="../img/icons.svg#chocolate-logo"></use>
+      </svg>
+    </div>
+
+    <nav class="header-nav">
+      <ul class="header-nav-list">
+        <li class="header-nav-item">
+          <a href="" class="header-nav-link">Home</a>
+        </li>
+        <li class="header-nav-item">
+          <a href="" class="header-nav-link">How it’s made?</a>
+        </li>
+        <li class="header-nav-item">
+          <a href="" class="header-nav-link">Our products</a>
+        </li>
+        <li class="header-nav-item">
+          <a href="" class="header-nav-link">Top sellers</a>
+        </li>
+        <li class="header-nav-item">
+          <a href="" class="header-nav-link">Chocolate is loved</a>
+        </li>
+      </ul>
+    </nav>
+    <ul class="header-soc-list">
+      <li class="header-soc-item">
+        <a href="" class="header-soc-link">
+          <svg class="soc-link-icon">
+            <use href="../img/icons.svg#instagram"></use>
+          </svg>
+        </a>
       </li>
-
-      <li class="nav-item">
-        <a href="./" class="nav-link"></a>
+      <li class="header-soc-item">
+        <a href="" class="header-soc-link">
+          <svg class="soc-link-icon">
+            <use href="../img/icons.svg#twitter"></use>
+          </svg>
+        </a>
       </li>
     </ul>
-  </nav>
+    <button class="header-modal-button" type="button" data-modal-open>
+      <svg class="burger-button">
+        <use href="../img/icons.svg#icon-burger"></use>
+      </svg>
+    </button>
+  </div>
+  <div class="header-modal" data-modal>
+    <button class="header-close-button" type="button" data-modal-close>
+      <svg class="header-modal-close">
+        <use href="../img/icons.svg#close"></use>
+      </svg>
+    </button>
+    <ul class="modal-nav-list">
+      <li class="modal-nav-item">
+        <a href="" class="modal-nav-link">Home</a>
+      </li>
+      <li class="modal-nav-item">
+        <a href="" class="modal-nav-link">How it’s made?</a>
+      </li>
+      <li class="modal-nav-item">
+        <a href="" class="modal-nav-link">Our products</a>
+      </li>
+      <li class="modal-nav-item">
+        <a href="" class="modal-nav-link">Top sellers</a>
+      </li>
+      <li class="modal-nav-item">
+        <a href="" class="modal-nav-link">Chocolate is loved</a>
+      </li>
+    </ul>
+    <ul class="header-modal-soc-list">
+      <li class="header-modal-soc-item">
+        <a href="https://www.instagram.com/" class="header-modal-soc-link">
+          <svg class="soc-link-icon">
+            <use href="../img/icons.svg#instagram"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="header-modal-soc-item">
+        <a href="https://twitter.com/" class="header-modal-soc-link">
+          <svg class="soc-link-icon">
+            <use href="../img/icons.svg#twitter"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+  </div>
 </header>
+<script src="../js/modal-header.js"></script>
 
 
-  <main>
-    <!-- "Who did this?" -->
-    <!-- <br>Hero<br>
+    <main>
+      <!-- "Who did this?" -->
+      <!-- <br>Hero<br>
 У секції немає видимого заголовку. Потрібно зробити прихований заголовок для краулерів.
 Текст “Treat yourself or a loved one to our finest ingredients for a moment of pure delight!”  є підзаголовком сторінки.
 Кнопка “Buy now” відкриває модальне вікно “Buy now”.
 Кнопка “How it’s made” є якірним посиланням до секції “How it’s made”.
 Кнопка “Scroll down” є якірним посиланням до Footerу. -->
 
-    <!-- "Who did this?" -->
-    <!-- <br>Advantages <br>
+      <!-- "Who did this?" -->
+      <!-- <br>Advantages <br>
 У секції немає видимого заголовку. Потрібно зробити прихований заголовок для краулерів.
 Перелік переваг, який необхідно реалізувати як сітку елементів з використанням <ul>. -->
 <section class="advantages-section">
@@ -106,56 +191,61 @@
   </div>
 </section>
 
-    <!-- "Who did this?" -->
-    <!-- <br>Unique components<br>
+      <!-- "Who did this?" -->
+      <!-- <br>Unique components<br>
 Текст “IT ALL ADDS UP TO ONE EXCEPTIONAL TASTE SENSATION” є заголовком секції.
 У секції знаходиться перелік унікальних складових шоколаду. Його необхідно реалізувати як сітку елементів з використанням <ul>.
 При ховер-ефекті картка з унікальною складовою розгортається та візуалізує її опис.* -->
 
-    <!-- "Who did this?" -->
-    <!-- <br>How it’s made?<br>
+      <!-- "Who did this?" -->
+      <!-- <br>How it’s made?<br>
 Текст “HOW IT’S MADE?” є заголовком секції.
 Зображення потрібно реалізувати як контентні зображення. 
 Відео-ролик необхідно реалізувати за допомогою iframe, вибравши на Youtube тематичний ролик.* 
 У секції знаходиться перелік необхідних кроків для приготування шоколадних цукерок, який необхідно реалізувати як список елементів за допомогою <ul>. -->
 
-    <!-- "Who did this?" -->
-    <!-- <br>Our products <br>
+      <!-- "Who did this?" -->
+      <!-- <br>Our products <br>
 Текст “OUR PRODUCTS” є заголовком секції.
 У секції знаходиться перелік продуктів компанії, який необхідно реалізувати як список елементів за допомогою <ul>. У секції представлений слайдер. Маркери знизу - це пагінація слайдера. Якщо ви підключаєте бібліотеку слайдера до проєкту, їх не потрібно верстати, вони автоматично генеруються бібліотекою. Потрібно буде лише зробити стилізацію пагінації.* -->
 
-    <!-- "Who did this?" -->
-    <!-- <br>Top sellers<br>
+      <!-- "Who did this?" -->
+      <!-- <br>Top sellers<br>
 Текст “TOP SELLERS” є заголовком секції.
 У секції знаходиться перелік контентних зображень, який необхідно реалізувати як список елементів за допомогою <ul>.
 Кнопка “Buy now” відкриває модальне вікно “Buy now”. -->
 
-    <!-- "Who did this?" -->
-    <!-- <br>Reviews<br>
+      <!-- "Who did this?" -->
+      <!-- <br>Reviews<br>
 Текст “CHOCOLATE IS LOVED” є заголовком секції.
 У секції представлений слайдер із відгуками покупців. Маркери знизу - це пагінація слайдера. Якщо ви підключаєте бібліотеку слайдера до проєкту, їх не потрібно верстати, вони автоматично генеруються бібліотекою. Потрібно буде лише зробити стилізацію пагінації.*
 Кнопка “Leave a review” відкриває модальне вікно “Leave a review about our chocolate”. -->
 
-    <!-- "Who did this?" -->
-    <!-- <br>Subscribe<br>
+      <!-- "Who did this?" -->
+      <!-- <br>Subscribe<br>
 Текст “EXPLORE OUR NEW CHOCOLATE FIRST” є заголовком секції.
 Кнопка “Subscribe” відкриває модальне вікно “Explore our new chocolate first”. -->
 
-  </main>
+    </main>
 
-  <!-- "Who did this?" -->
-  <!-- <br>Footer<br>
+    <!-- "Who did this?" -->
+    <!-- <br>Footer<br>
 В Footer-і знаходиться слоган компанії, контакти, перелік посилань на соц. мережі компанії, а також перелік якірних посилань по сайту.
 Контактні номер телефону та електронна пошта необхідно реалізувати за допомогою протоколів посилання.
 Перелік посилань на соц. мережі має бути реалізовано як список елементів за допомогою <ul>, що відкриватимуть стартову сторінку відповідної соц. мережі у новій вкладці. Іконки соц. мереж потрібно реалізувати у форматі svg. 
 Перелік якірних посилань має бути реалізовано як список елементів за допомогою <ul>.  -->
 
 
-  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
-    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
-    crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js" type="module"></script>
-  
-</body>
-
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"
+      type="module"
+    ></script>
+    
+  </body>
 </html>
